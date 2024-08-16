@@ -7,11 +7,6 @@
 
 const express = require('express');
 
-// mathFunctions.js
-
-function sum(a, b) {
-    return a + b;
-}
 
 // Constants
 const PORT = 3000;
