@@ -7,6 +7,12 @@
 
 const express = require('express');
 
+// mathFunctions.js
+
+function sum(a, b) {
+    return a + b;
+}
+
 // Constants
 const PORT = 3000;
 const HOST = '0.0.0.0';
@@ -14,6 +20,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
+	sum(2+3)
 	res.send('Hello remote world!\n');
 });
 
