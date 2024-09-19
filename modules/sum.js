@@ -1,7 +1,14 @@
-// mathFunctions.js
+// Filename: func.js
 
-function sum(a, b) {
-    return a + b;
-}
-
-module.exports = sum;
+function add(x, y) {
+    return x + y;
+ }
+ 
+ function subtract(x, y) {
+    return x - y;
+ }
+ 
+ // Adding the code below to allow importing
+ // the functions in other files
+ module.exports = { add }
+ 

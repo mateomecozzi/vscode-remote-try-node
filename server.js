@@ -6,17 +6,18 @@
 'use strict';
 
 const express = require('express');
+const f = require('./modules/sum')
 
 
 // Constants
 const PORT = 3000;
-const HOST = '0.0.0.0';
+const HOST = 'localhost';
 
 // App
 const app = express();
 app.get('/', (req, res) => {
-	sum(2+3)
-	res.send('Hello remote world!\n');
+	const suma = f.add(2+4)
+	res.send({Tittle:'Hello remote world!\n'});
 });
 
 app.listen(PORT, HOST);
